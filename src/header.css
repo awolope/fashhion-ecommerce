@@ -1,0 +1,9 @@
+.head {
+  background: linear-gradient(180deg, rgba(33, 37, 41, 0.5) 50%, #000000 100%),
+    url("./background.png");
+  background-size: cover;
+  background-position: center middle;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin-top: 1px;
+}
