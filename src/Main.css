@@ -1,0 +1,51 @@
+.main {
+  background-color: #f9f6f4;
+  padding: 40px;
+}
+.focus {
+  color: red;
+}
+.mainh1 {
+  font-family: Nunito Sans;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 65.47px;
+  letter-spacing: 0.002em;
+  text-align: center;
+}
+.mainh2 {
+  font-family: Nunito Sans;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 44.56px;
+  letter-spacing: 0.001em;
+  text-align: left;
+}
+.mainp {
+  font-family: Nunito Sans;
+  font-size: 20px;
+  font-weight: 400;
+  opacity: 0.6;
+  line-height: 32.74px;
+  letter-spacing: 0.001em;
+  text-align: left;
+}
+@media (max-width: 900px) {
+  .main {
+    padding: 20px;
+  }
+  .mainh1 {
+    font-size: 20px;
+    margin-bottom: -103px;
+  }
+
+  .mainh2 {
+    font-size: 18px;
+    margin: 0px;
+    line-height: 24px;
+  }
+  .mainp {
+    font-size: 10px;
+    line-height: 15px;
+  }
+}

@@ -21,7 +21,7 @@ const App = () => {
   return (
     <Router>
       <NavBar />
-      <div className="sm">
+      <div className="container-fluid">
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route

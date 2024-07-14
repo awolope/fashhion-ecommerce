@@ -4,6 +4,71 @@
   background-size: cover;
   background-position: center middle;
   background-repeat: no-repeat;
+  margin-top: -60px;
+  padding: 30px;
   height: 100vh;
-  margin-top: 1px;
+}
+.headerh1 {
+  font-family: Nunito Sans;
+  font-size: 45px;
+  font-weight: 600;
+  color: white;
+  margin-top: 200px;
+  line-height: 81.84px;
+  letter-spacing: 0.002em;
+  text-align: center;
+}
+.headerh2 {
+  text-align: center;
+  color: white;
+  margin-top: -20px;
+  font-family: Nunito Sans;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32.74px;
+  letter-spacing: 0.001em;
+}
+.clockdiv {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin-top: 70px;
+  font-size: 25px;
+
+  text-align: center;
+}
+
+.clockp {
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 38.19px;
+  text-align: left;
+}
+.shopbt {
+  background-color: rgba(34, 38, 1, 1);
+  color: white;
+  border: 1px solid transparent;
+  padding: 10px;
+  border-radius: 5px;
+}
+@media (max-width: 900px) {
+  .head {
+    margin-top: 0px;
+    height: 380px;
+  }
+  .clockp {
+    font-size: 10px;
+  }
+  .clockdiv {
+    font-size: 15px;
+  }
+  .headerh1 {
+    font-size: 18px;
+    margin-top: 30px;
+  }
+  .headerh2 {
+    font-size: 9px;
+    margin-top: -50px;
+  }
 }

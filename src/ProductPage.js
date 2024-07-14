@@ -38,15 +38,21 @@ const products = [
     price: 19.99,
     image: "https://via.placeholder.com/150",
   },
+  {
+    id: 7,
+    name: "Cool Sunglasses",
+    price: 19.99,
+    image: "https://via.placeholder.com/150",
+  },
 ];
 
 const ProductPage = ({ addToCart }) => {
   return (
     <div className="product-page">
-      <h2 className="text-center my-4">Products</h2>
+      <h2 className="text-center my-3">Products</h2>
       <div className="row">
         {products.map((product) => (
-          <div key={product.id} className="col-md-4 mb-4">
+          <div key={product.id} className="col-md-3 mb-4">
             <div className="card">
               <img
                 src={product.image}

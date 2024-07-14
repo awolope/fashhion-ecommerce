@@ -86,7 +86,7 @@ const CheckoutPage = ({ cart, clearCart }) => {
           />
         </div>
         <button type="submit" className="btn btn-success">
-          Submit Payment
+          Process Payment
         </button>
       </form>
     </div>
