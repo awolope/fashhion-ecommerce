@@ -1,0 +1,24 @@
+.footdiv {
+  display: flex;
+  margin: 0px;
+  justify-content: space-around;
+  background-color: rgba(236, 227, 221, 1);
+}
+.footp {
+  font-family: Nunito Sans;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 32.74px;
+  letter-spacing: 0.001em;
+  opacity: 0.6;
+}
+@media (max-width: 900px) {
+  .footp {
+    line-height: 15px;
+    font-size: 10px;
+  }
+  .footdiv {
+    margin: 0px;
+    padding: 3px;
+  }
+}

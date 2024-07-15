@@ -1,0 +1,46 @@
+.custom a {
+  text-decoration: none;
+  color: black;
+  margin: 10px;
+  font-family: Nunito Sans;
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 27.28px;
+  letter-spacing: 0.001em;
+  text-align: left;
+  opacity: 0.6;
+}
+.customdiv {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 900px;
+}
+.customer a {
+  text-decoration: none;
+  color: red;
+  margin: 10px;
+  margin-left: -1px;
+}
+@media (max-width: 900px) {
+  .custom {
+    font-size: 12px;
+    margin: 7px;
+  }
+  .customer a {
+    font-size: 10px;
+    margin: 5px;
+    line-height: 10px;
+  }
+  .customer {
+    font-size: 12px;
+    margin-top: 7px;
+  }
+  .custom a {
+    font-size: 10px;
+    margin: 2px;
+    line-height: 10px;
+  }
+  .customdiv {
+    margin-left: 0px;
+  }
+}

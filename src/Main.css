@@ -40,7 +40,22 @@
   font-size: 15px;
   padding: 5px;
 }
-
+.semfd {
+  font-family: Nunito Sans;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32.74px;
+  text-align: left;
+  color: rgba(34, 38, 1, 1);
+}
+.semfd2 {
+  font-family: Nunito Sans;
+  font-size: 16px;
+  opacity: 0.6;
+  font-weight: 400;
+  line-height: 27.28px;
+  text-align: left;
+}
 @media (max-width: 900px) {
   .main {
     padding: 20px;
