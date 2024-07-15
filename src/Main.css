@@ -30,22 +30,38 @@
   letter-spacing: 0.001em;
   text-align: left;
 }
+.seemore {
+  text-decoration: none;
+  border: 1px solid white;
+  background-color: white;
+  color: black;
+
+  border-radius: 10px;
+  font-size: 15px;
+  padding: 5px;
+}
+
 @media (max-width: 900px) {
   .main {
     padding: 20px;
   }
   .mainh1 {
     font-size: 20px;
-    margin-bottom: -103px;
+    margin-bottom: -110px;
   }
 
   .mainh2 {
     font-size: 18px;
     margin: 0px;
+    margin-left: -40px;
     line-height: 24px;
+    margin-bottom: 5px;
   }
+
   .mainp {
     font-size: 10px;
     line-height: 15px;
+    margin-left: -40px;
+    margin-bottom: -30px;
   }
 }
