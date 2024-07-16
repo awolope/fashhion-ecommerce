@@ -1,35 +1,90 @@
-// src/CartPage.js
-
 import React from "react";
+import MiniFooter from "./minifooter";
+import Footer from "./footer";
 import { useNavigate } from "react-router-dom";
-
-const CartPage = ({ cart, clearCart }) => {
+import "./CartPage.css";
+const CartPage = ({ cart, clearCart, updateCartItemQuantity }) => {
   const navigate = useNavigate();
+
+  const handleQuantityChange = (productId, change) => {
+    const product = cart.find((item) => item.id === productId);
+    if (product.quantity + change > 0) {
+      updateCartItemQuantity(productId, change);
+    }
+  };
+
+  const calculateTotal = () => {
+    return cart.reduce((total, item) => total + item.price * item.quantity, 0);
+  };
 
   return (
     <div className="cart-page">
-      <h2>Cart</h2>
+      <h2 className="ch2">Cart</h2>
       {cart.length === 0 ? (
-        <p>Your cart is empty.</p>
+        <p className="text-center">Your cart is empty.</p>
       ) : (
         <>
-          {cart.map((item, index) => (
-            <div key={index} className="cart-item">
-              <h5>{item.name}</h5>
-              <p>${item.price.toFixed(2)}</p>
+          {cart.map((item) => (
+            <div key={item.id} className="cart-item row  text-center">
+              <div className="col-md-3 ">
+                <h5>{item.name}</h5>
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  style={{ width: "50px" }}
+                />
+              </div>
+              <div className="col-md-3">
+                <p>price</p>
+                <p>₦{item.price},000.00</p>
+              </div>
+              <div className="col-md-3">
+                <p>Quantity</p>
+                <button
+                  onClick={() => handleQuantityChange(item.id, -1)}
+                  className="minusbtn"
+                >
+                  -
+                </button>
+                <span className="qty">{item.quantity}</span>
+                <button
+                  onClick={() => handleQuantityChange(item.id, 1)}
+                  className="minusbtn"
+                >
+                  +
+                </button>
+              </div>
+              <div className="col-md-3">
+                {" "}
+                <p>Subtotal</p>
+                <p>₦ {item.price * item.quantity},000.00</p>
+              </div>
             </div>
           ))}
-          <button onClick={clearCart} className="btn btn-danger mt-3">
-            Clear Cart
-          </button>
-          <button
-            onClick={() => navigate("/checkout")}
-            className="btn btn-primary mt-3 ms-3"
-          >
-            Proceed to Pay
-          </button>
+          <div className="text-center mt-5">
+            <h3>Total: ₦{calculateTotal()},000.00</h3>
+            <button onClick={clearCart} className="btn btn-danger ">
+              Clear Cart
+            </button>
+            <button
+              onClick={() => navigate("/checkout")}
+              className="btnc mt-3 "
+            >
+              Proceed to Pay
+            </button>
+          </div>
         </>
       )}
+      <div className="row m-5">
+        <div className="col-md-6">
+          <p className="cfp ms-5">TimbuCloud™</p>
+        </div>
+        <div className="col-md-6">
+          {" "}
+          <MiniFooter />
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 };

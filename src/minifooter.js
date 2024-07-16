@@ -1,6 +1,5 @@
 import React from "react";
 import "./minifooter.css";
-import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
@@ -10,7 +9,7 @@ import {
 export default function MiniFooter() {
   return (
     <div className="customdiv">
-      <div className="custom">
+      <div className="custom m">
         <p>
           <strong>Customer Service</strong>
         </p>
@@ -21,7 +20,7 @@ export default function MiniFooter() {
         <a href="/"> Refund Policy</a>
       </div>
 
-      <div className="custom">
+      <div className="custom ">
         <p>
           <strong>Pages</strong>
         </p>
@@ -31,7 +30,7 @@ export default function MiniFooter() {
         <br />
         <a href="/"> faQ</a>
       </div>
-      <div className="customer">
+      <div className="customer ">
         <p>
           <strong>Follow Us</strong>
         </p>

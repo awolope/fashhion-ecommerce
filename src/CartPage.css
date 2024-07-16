@@ -1,0 +1,51 @@
+.minusbtn {
+  border: 1px solid red;
+  background: white;
+  color: black;
+  border-radius: 3px;
+}
+.qty {
+  border: 1px solid red;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 4px;
+  font-size: 13px;
+}
+.btnc {
+  background-color: rgba(34, 38, 1, 1);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 20px;
+  border: 1px solid rgba(34, 38, 1, 1);
+}
+.cfp {
+  font-family: Nunito Sans;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32.74px;
+  margin-top: 80px;
+  color: rgba(34, 38, 1, 1);
+}
+.ch2 {
+  font-family: Nunito Sans;
+  font-size: 48px;
+  margin-left: 20px;
+  font-weight: 400;
+  line-height: 65.47px;
+  letter-spacing: 0.002em;
+  text-align: left;
+  color: red;
+}
+.btnc:hover .btnv:focus .btnc:active {
+  background-color: rgb(62, 68, 5);
+  color: white;
+  padding: 7px;
+  border-radius: 10px;
+  border: 1px solid rgba(34, 38, 1, 1);
+}
+@media (max-width: 900px) {
+  .cfp {
+    margin-top: 0px;
+  }
+}

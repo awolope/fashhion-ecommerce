@@ -28,13 +28,13 @@ const Main = () => {
           </div>
         </div>
         <div className=" col-md-6">
-          <img src="./woman.png" className="img-fluid text-center"></img>
+          <img src="./woman.png" className="img-fluid text-center" alt=""></img>
         </div>
       </div>
 
       <div className="row m-5">
         <div className=" col-md-6">
-          <img src="./man.png" className="img-fluid text-center"></img>
+          <img src="./man.png" className="img-fluid text-center" alt=""></img>
         </div>
 
         <div className="col-md-6 ">
@@ -75,7 +75,10 @@ const Main = () => {
         discounts on all items
       </p>
       <Search />
-      <MiniFooter />
+      <div className="minifootm">
+        {" "}
+        <MiniFooter />
+      </div>
     </div>
   );
 };

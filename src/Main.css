@@ -48,6 +48,9 @@
   text-align: left;
   color: rgba(34, 38, 1, 1);
 }
+.minifootm {
+  margin-left: 530px;
+}
 .semfd2 {
   font-family: Nunito Sans;
   font-size: 16px;
@@ -59,6 +62,9 @@
 @media (max-width: 900px) {
   .main {
     padding: 20px;
+  }
+  .minifootm {
+    margin-left: 0px;
   }
   .mainh1 {
     font-size: 20px;

@@ -1,0 +1,36 @@
+.proimg {
+  height: 240px;
+}
+.carim {
+  background-color: #cccccc;
+}
+.carim2 {
+  background-color: white;
+}
+.form-select {
+  width: 90px;
+  margin: 35px;
+  font-size: 10px;
+}
+.pfp {
+  font-family: Nunito Sans;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32.74px;
+  margin-top: 60px;
+  color: rgba(34, 38, 1, 1);
+}
+
+.ph2 {
+  color: red;
+}
+@media (max-width: 900px) {
+  .form-select {
+    margin: 0px;
+    font-size: 7px;
+    width: 80px;
+  }
+  .pfp {
+    margin-top: 0px;
+  }
+}

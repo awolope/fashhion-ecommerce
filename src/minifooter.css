@@ -10,20 +10,28 @@
   text-align: left;
   opacity: 0.6;
 }
+.custom {
+  margin: 40px;
+}
+.customer {
+  margin: 40px;
+}
 .customdiv {
   display: flex;
-  justify-content: space-between;
-  margin-left: 900px;
 }
 .customer a {
   text-decoration: none;
   color: red;
   margin: 10px;
+  font-size: 10px;
   margin-left: -1px;
 }
 @media (max-width: 900px) {
   .custom {
     font-size: 12px;
+    margin: 7px;
+  }
+  .customer {
     margin: 7px;
   }
   .customer a {
@@ -42,5 +50,6 @@
   }
   .customdiv {
     margin-left: 0px;
+    margin-top: 10px;
   }
 }
