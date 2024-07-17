@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Footer from "./footer";
+import MiniFooter from "./minifooter";
 import { useNavigate } from "react-router-dom";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
@@ -205,6 +207,16 @@ const CheckoutPage = ({ cart, clearCart }) => {
         </div>
       </form>
       {orderPlaced && <p>Thank you for your purchase!</p>}
+      <div className="row mt-5 mb-5">
+        <div className="col-md-6 mt-5">
+          <p className="pfp text-start ms-5">TimbuCloud™</p>
+        </div>
+        <div className="col-md-6 ">
+          {" "}
+          <MiniFooter />
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 };
