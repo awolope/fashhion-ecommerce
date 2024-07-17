@@ -36,7 +36,7 @@ const CartPage = ({
                 <img
                   src={item.image}
                   alt={item.name}
-                  style={{ width: "50px" }}
+                  style={{ width: "70px" }}
                 />
                 <br />
                 <button
