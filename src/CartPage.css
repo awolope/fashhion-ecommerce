@@ -44,7 +44,7 @@
   color: red;
 }
 .btnc:hover .btnc:focus .btnc:active {
-  background-color: rgb(62, 68, 5);
+  background-color: rgb(68, 75, 3);
   color: white;
   padding: 7px;
   border-radius: 10px;

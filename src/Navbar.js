@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart, faSearch } from "@fortawesome/free-solid-svg-icons";
 const NavBar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar bg ">
+    <nav className="navbar navbar-expand-lg navbar bg bg-light fixed-top">
       <div className="container-fluid">
         <Link className="navbar-brand navb" to="/">
           TimbuCloud™
