@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import LandingPage from "./LandingPage";
 import ProductPage from "./ProductPage";
+import ThankYouPage from "./Thank you";
 import CartPage from "./CartPage";
 import CheckoutPage from "./CheckoutPage";
 import "./App.css";
@@ -38,6 +39,9 @@ const App = () => {
       }
     });
   };
+  const removeFromCart = (productId) => {
+    setCart((prevCart) => prevCart.filter((item) => item.id !== productId));
+  };
 
   const clearCart = () => {
     setCart([]);
@@ -68,13 +72,23 @@ const App = () => {
                 cart={cart}
                 clearCart={clearCart}
                 updateCartItemQuantity={updateCartItemQuantity}
+                removeFromCart={removeFromCart}
               />
             }
           />
           <Route
             path="/checkout"
-            element={<CheckoutPage cart={cart} clearCart={clearCart} />}
+            element={
+              <CheckoutPage
+                cart={cart}
+                clearCart={clearCart}
+                updateCartItemQuantity={updateCartItemQuantity}
+                removeFromCart={removeFromCart}
+              />
+            }
           />
+
+          <Route path="/thank-you" element={<ThankYouPage />} />
         </Routes>
       </div>
     </Router>

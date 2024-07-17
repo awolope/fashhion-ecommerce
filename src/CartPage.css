@@ -19,6 +19,12 @@
   margin-left: 20px;
   border: 1px solid rgba(34, 38, 1, 1);
 }
+.footc {
+  margin-top: 220px;
+}
+.footd {
+  margin-top: 220px;
+}
 .cfp {
   font-family: Nunito Sans;
   font-size: 20px;
@@ -37,7 +43,7 @@
   text-align: left;
   color: red;
 }
-.btnc:hover .btnv:focus .btnc:active {
+.btnc:hover .btnc:focus .btnc:active {
   background-color: rgb(62, 68, 5);
   color: white;
   padding: 7px;
@@ -46,6 +52,9 @@
 }
 @media (max-width: 900px) {
   .cfp {
+    margin-top: 0px;
+  }
+  .footd {
     margin-top: 0px;
   }
 }

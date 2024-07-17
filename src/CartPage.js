@@ -3,7 +3,12 @@ import MiniFooter from "./minifooter";
 import Footer from "./footer";
 import { useNavigate } from "react-router-dom";
 import "./CartPage.css";
-const CartPage = ({ cart, clearCart, updateCartItemQuantity }) => {
+const CartPage = ({
+  cart,
+  clearCart,
+  updateCartItemQuantity,
+  removeFromCart,
+}) => {
   const navigate = useNavigate();
 
   const handleQuantityChange = (productId, change) => {
@@ -33,6 +38,13 @@ const CartPage = ({ cart, clearCart, updateCartItemQuantity }) => {
                   alt={item.name}
                   style={{ width: "50px" }}
                 />
+                <br />
+                <button
+                  className="btn btn-danger btn-no-hover mt-2"
+                  onClick={() => removeFromCart(item.id)}
+                >
+                  Remove
+                </button>
               </div>
               <div className="col-md-3">
                 <p>price</p>
@@ -76,10 +88,10 @@ const CartPage = ({ cart, clearCart, updateCartItemQuantity }) => {
         </>
       )}
       <div className="row m-5">
-        <div className="col-md-6">
+        <div className="col-md-6 footc">
           <p className="cfp ms-5">TimbuCloud™</p>
         </div>
-        <div className="col-md-6">
+        <div className="col-md-6 footd">
           {" "}
           <MiniFooter />
         </div>
