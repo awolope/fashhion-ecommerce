@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className=" head container-fluid">
+    <div className=" head">
       <div className="text-center">
         <h1 className="headerh1 sm">Eternal Classics, Enduring Style</h1>
         <h2 className="headerh2">
