@@ -20,10 +20,11 @@
   margin-top: 60px;
   color: rgba(34, 38, 1, 1);
 }
-
+.product-page {
+  margin-top: 70px;
+}
 .ph2 {
   color: red;
-  margin-top: 60px;
 }
 @media (max-width: 900px) {
   .form-select {
