@@ -258,7 +258,7 @@ const ProductPage = ({ addToCart }) => {
   };
 
   return (
-    <div className="product-page">
+    <div className="product-page mt-5">
       <h2 className="text-center m-5 ph2 ">Our Collection</h2>
       <img src="./shopwoman.png" className="img-fluid mb-3" alt=""></img>
       <div className="sort-filter-controls d-flex justify-content-between mb-3">
